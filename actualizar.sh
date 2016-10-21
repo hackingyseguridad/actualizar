@@ -10,4 +10,4 @@ apt-get clean
 apt-get update
 apt-get upgrade --fix-missing -y
 apt-get dist-upgrade -y
-apt-get autoremove
+apt-get autoremove -y
