@@ -6,6 +6,7 @@
 # Antonio Taboada
 # 3 Sept 2016
 
+dpkg --configure -a
 apt-get clean
 apt-get update
 apt-get upgrade --fix-missing -y
