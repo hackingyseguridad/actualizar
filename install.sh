@@ -1,7 +1,5 @@
 #!/bin/sh
 # Actualizador de paguetes para Debian
-# Se instalara para ejecutarse y actualizar de forma automatica al inicio
-cp actualizar.sh /etc/init.d/
-cd /etc/init.d
+# Se instalara para poder ser ejecutardo como un comando de Linux
 chmod 777 actualizar
-update-rc.d actualizar defaults
+cp actualizar /sbin/
