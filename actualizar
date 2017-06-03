@@ -5,19 +5,19 @@
 # se ejecuta en consola ./actualizar
 # Antonio Taboada
 # 3 Sept 2016
-echo "..."
-echo
-echo ".__                   __   .__                                                       .__    .___           .___                        "
-echo "|  |__ _____    ____ |  | _|__| ____    ____ ___.__. ______ ____   ____  __ _________|__| __| _/____     __| _/    ____  ____   _____  "
-echo "|  |  \\__  \ _/ ___\|  |/ /  |/    \  / ___<   |  |/  ___// __ \ / ___\|  |  \_  __ \  |/ __ |\__  \   / __ |   _/ ___\/  _ \ /     \ "
-echo "|   Y  \/ __ \\  \___|    <|  |   |  \/ /_/  >___  |\___ \\  ___// /_/  >  |  /|  | \/  / /_/ | / __ \_/ /_/ |   \  \__(  <_> )  Y Y  \"
-echo "|___|  (____  /\___  >__|_ \__|___|  /\___  // ____/____  >\___  >___  /|____/ |__|  |__\____ |(____  /\____ | /\ \___  >____/|__|_|  |"
-echo "     \/     \/     \/     \/       \//_____/ \/         \/     \/_____/                      \/     \/      \/ \/     \/            \/ "
+echo 
+echo "Actualizando Linux..."
 echo
 dpkg --configure -a
+echo "Actualizando..."
 apt-get clean
+echo "Actualizando..."
 apt-get update
+echo "Actualizando..."
 apt-get upgrade --fix-missing -y
+echo "Actualizando..."
 apt-get dist-upgrade -y
+echo "Actualizando..."
 apt-get autoremove -y
-echo "Linux actualizado"
+echo "Linux actualizado."
+echo
