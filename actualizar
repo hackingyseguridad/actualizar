@@ -9,9 +9,7 @@ echo
 echo "Actualizando Linux..."
 echo
 dpkg --configure -a
-echo "Actualizando..."
 apt-get clean
-echo "Actualizando..."
 apt-get update
 echo "Actualizando..."
 apt-get upgrade --fix-missing -y
@@ -19,5 +17,6 @@ echo "Actualizando..."
 apt-get dist-upgrade -y
 echo "Actualizando..."
 apt-get autoremove -y
+echo
 echo "Linux actualizado."
 echo
