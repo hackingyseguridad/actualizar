@@ -9,21 +9,36 @@ echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 1/10 Actualizando Linux. **\e[0m"
 echo
 dpkg --configure -a
+echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 2/10 Actualizando... **\e[0m"
+echo
 sudo apt-get clean
+echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 3/10 Actualizando... **\e[0m"
+echo
 sudo apt-get update
+echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 4/10 Actualizando... **\e[0m"
+echo
 sudo apt-get upgrade --fix-missing -y
+echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 5/10 Actualizando... **\e[0m"
+echo
 sudo apt-get dist-upgrade -y
 echo "\e[1;31m[+]\e[0;30m \e[42m** 6/10 Actualizando... **\e[0m"
+echo
 sudo apt-get autoremove -y
+echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 7/10 Actualizando... **\e[0m"
+echo
 sudo apt -y autoclean
+echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 8/10 Actualizando... **\e[0m"
+echo
 sudo apt update
+echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 9/10 Actualizando... **\e[0m"
+echo
 sudo apt -f -y install
 echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 10/10 Linux actualizado. **\e[0m"
