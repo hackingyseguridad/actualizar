@@ -6,17 +6,25 @@
 # Antonio Taboada
 # 3 Sept 2016
 echo 
-echo "Actualizando Linux..."
+echo -e "\e[1;31m[+]\e[0;30m \e[42m** Actualizando Linux. **\e[0m"
 echo
 dpkg --configure -a
+echo -e "\e[1;31m[+]\e[0;30m \e[42m** Actualizando... **\e[0m"
 apt-get clean
+echo -e "\e[1;31m[+]\e[0;30m \e[42m** Actualizando... **\e[0m"
 apt-get update
-echo "Actualizando..."
+echo -e "\e[1;31m[+]\e[0;30m \e[42m** Actualizando... **\e[0m"
 apt-get upgrade --fix-missing -y
-echo "Actualizando..."
+echo -e "\e[1;31m[+]\e[0;30m \e[42m** Actualizando... **\e[0m"
 apt-get dist-upgrade -y
-echo "Actualizando..."
+echo -e "\e[1;31m[+]\e[0;30m \e[42m** Actualizando... **\e[0m"
 apt-get autoremove -y
+echo -e "\e[1;31m[+]\e[0;30m \e[42m** Actualizando... **\e[0m"
+sudo apt -y autoclean
+echo -e "\e[1;31m[+]\e[0;30m \e[42m** Actualizando... **\e[0m"
+sudo apt update
+echo -e "\e[1;31m[+]\e[0;30m \e[42m** Actualizando... **\e[0m"
+sudo apt -f -y install
 echo
-echo "Linux actualizado."
+echo -e "\e[1;31m[+]\e[0;30m \e[42m** Linux actualizado. **\e[0m"
 echo
