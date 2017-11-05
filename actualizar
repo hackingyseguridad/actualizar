@@ -25,6 +25,7 @@ echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 5/10 Actualizando... **\e[0m"
 echo
 sudo apt-get dist-upgrade -y
+echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 6/10 Actualizando... **\e[0m"
 echo
 sudo apt-get autoremove -y
