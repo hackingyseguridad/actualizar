@@ -6,25 +6,25 @@
 # Antonio Taboada
 # 3 Sept 2016
 echo 
-echo -e "\e[1;31m[+]\e[0;30m \e[42m** Actualizando Linux. **\e[0m"
+echo "\e[1;31m[+]\e[0;30m \e[42m** 1/10 Actualizando Linux. **\e[0m"
 echo
 dpkg --configure -a
-echo -e "\e[1;31m[+]\e[0;30m \e[42m** Actualizando... **\e[0m"
-apt-get clean
-echo -e "\e[1;31m[+]\e[0;30m \e[42m** Actualizando... **\e[0m"
-apt-get update
-echo -e "\e[1;31m[+]\e[0;30m \e[42m** Actualizando... **\e[0m"
-apt-get upgrade --fix-missing -y
-echo -e "\e[1;31m[+]\e[0;30m \e[42m** Actualizando... **\e[0m"
-apt-get dist-upgrade -y
-echo -e "\e[1;31m[+]\e[0;30m \e[42m** Actualizando... **\e[0m"
-apt-get autoremove -y
-echo -e "\e[1;31m[+]\e[0;30m \e[42m** Actualizando... **\e[0m"
+echo "\e[1;31m[+]\e[0;30m \e[42m** 2/10 Actualizando... **\e[0m"
+sudo apt-get clean
+echo "\e[1;31m[+]\e[0;30m \e[42m** 3/10 Actualizando... **\e[0m"
+sudo apt-get update
+echo "\e[1;31m[+]\e[0;30m \e[42m** 4/10 Actualizando... **\e[0m"
+sudo apt-get upgrade --fix-missing -y
+echo "\e[1;31m[+]\e[0;30m \e[42m** 5/10 Actualizando... **\e[0m"
+sudo apt-get dist-upgrade -y
+echo "\e[1;31m[+]\e[0;30m \e[42m** 6/10 Actualizando... **\e[0m"
+sudo apt-get autoremove -y
+echo "\e[1;31m[+]\e[0;30m \e[42m** 7/10 Actualizando... **\e[0m"
 sudo apt -y autoclean
-echo -e "\e[1;31m[+]\e[0;30m \e[42m** Actualizando... **\e[0m"
+echo "\e[1;31m[+]\e[0;30m \e[42m** 8/10 Actualizando... **\e[0m"
 sudo apt update
-echo -e "\e[1;31m[+]\e[0;30m \e[42m** Actualizando... **\e[0m"
+echo "\e[1;31m[+]\e[0;30m \e[42m** 9/10 Actualizando... **\e[0m"
 sudo apt -f -y install
 echo
-echo -e "\e[1;31m[+]\e[0;30m \e[42m** Linux actualizado. **\e[0m"
+echo "\e[1;31m[+]\e[0;30m \e[42m** 10/10 Linux actualizado. **\e[0m"
 echo
