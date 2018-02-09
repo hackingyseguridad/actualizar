@@ -16,6 +16,7 @@ sudo apt-get clean
 echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 3/10 Actualizando... **\e[0m"
 echo
+gpg -a --export 7D8D0BF6 | apt-key add -
 sudo apt-get update
 echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 4/10 Actualizando... **\e[0m"
