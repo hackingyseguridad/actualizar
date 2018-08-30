@@ -1,10 +1,17 @@
 #!/bin/sh
-# actualizador de paguetes para Debian
-# actualizar.sh Programado en shell
-# boton derecho para dar permisos del ejecucion o desde consola teclemaos: chmod 777 actualizar
-# se ejecuta en consola ./actualizar
-# Antonio Taboada
-# 3 Sept 2016
+# Actualizador de paguetes para distribuciones basadas en Debian
+# En modo X pulsar boton derecho del raton para dar permisos del ejecucion o desde consola teclemaos: chmod 777 actualizar. O ejecutar: sh instalar.sh
+# Uso. ./actualizar
+# Antonio Taboada 3 Sept 2016
+cat << "INFO"
+             _               _ _               
+            | |             | (_)              
+   __ _  ___| |_ _   _  __ _| |_ ______ _ _ __ 
+  / _` |/ __| __| | | |/ _` | | |_  / _` | '__|
+ | (_| | (__| |_| |_| | (_| | | |/ / (_| | |   
+  \__,_|\___|\__|\__,_|\__,_|_|_/___\__,_|_|    v1.0
+                     www.hackingyseguridad.com
+INFO
 echo 
 echo "\e[1;31m[+]\e[0;30m \e[42m** 1/10 Actualizando Linux. **\e[0m"
 echo
