@@ -3,10 +3,9 @@
 # En modo X pulsar boton derecho del raton para dar permisos del ejecucion o desde consola teclemaos: chmod 777 actualizar. O ejecutar: sh instalar.sh
 # Uso.: ./actualizar
 # Antonio Taboada 3 Sept 2016
-Verde=$(echo 'printf' '\033[32m')
 Blanco=$(echo 'printf' '\033[0m')
 BlancoAlt=$(echo 'printf' '\033[97m')
-$Verde
+$Blanco
 cat << "INFO"
              _               _ _               
             | |             | (_)              
