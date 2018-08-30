@@ -3,6 +3,10 @@
 # En modo X pulsar boton derecho del raton para dar permisos del ejecucion o desde consola teclemaos: chmod 777 actualizar. O ejecutar: sh instalar.sh
 # Uso.: ./actualizar
 # Antonio Taboada 3 Sept 2016
+Verde=$(echo 'printf' '\033[32m')
+Blanco=$(echo 'printf' '\033[0m')
+BlancoAlt=$(echo 'printf' '\033[97m')
+$Verde
 cat << "INFO"
              _               _ _               
             | |             | (_)              
@@ -10,8 +14,11 @@ cat << "INFO"
   / _` |/ __| __| | | |/ _` | | |_  / _` | '__|
  | (_| | (__| |_| |_| | (_| | | |/ / (_| | |   
   \__,_|\___|\__|\__,_|\__,_|_|_/___\__,_|_|    v1.0
-                     www.hackingyseguridad.com
 INFO
+$BlancoAlt
+echo "                  hackingyseguridad.com"
+echo
+$Blanco
 echo 
 echo "\e[1;31m[+]\e[0;30m \e[42m** 1/10 Actualizando Linux. **\e[0m"
 echo
