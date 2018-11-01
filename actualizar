@@ -15,7 +15,7 @@ cat << "INFO"
   \__,_|\___|\__|\__,_|\__,_|_|_/___\__,_|_|    v1.0
 INFO
 $BlancoAlt
-echo "                         hackingyseguridad.com"
+echo "                     www.hackingyseguridad.com"
 echo
 $Blanco
 echo 
