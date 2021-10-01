@@ -2,7 +2,7 @@
 # Actualizador de paguetes para distribuciones basadas en Debian
 # En modo X pulsar boton derecho del raton para dar permisos del ejecucion o desde consola teclemaos: chmod 777 actualizar. O ejecutar: sh instalar.sh
 # Uso.: ./actualizar
-# Antonio Taboada 3 Sept 2016
+# Antonio Taboada 30 Sept 2021
 Blanco=$(echo 'printf' '\033[0m')
 BlancoAlt=$(echo 'printf' '\033[97m')
 $Blanco
@@ -12,7 +12,7 @@ cat << "INFO"
    __ _  ___| |_ _   _  __ _| |_ ______ _ _ __ 
   / _` |/ __| __| | | |/ _` | | |_  / _` | '__|
  | (_| | (__| |_| |_| | (_| | | |/ / (_| | |   
-  \__,_|\___|\__|\__,_|\__,_|_|_/___\__,_|_|    v1.0
+  \__,_|\___|\__|\__,_|\__,_|_|_/___\__,_|_|    v2.0 (2021)
 INFO
 $BlancoAlt
 echo "              http://www.hackingyseguridad.com"
@@ -25,37 +25,37 @@ dpkg --configure -a
 echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 2/10 Actualizando... **\e[0m"
 echo
-sudo apt-get clean
+apt-get clean
 echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 3/10 Actualizando... **\e[0m"
 echo
 # apt-key adv --keyserver hkp://keys.gnupg.net --recv-keys 7D8D0BF6
 # gpg -a --export 7D8D0BF6 | apt-key add -
-sudo apt-get update
+apt-get update
 echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 4/10 Actualizando... **\e[0m"
 echo
-sudo apt-get upgrade --fix-missing -y
+apt-get upgrade --fix-missing -y
 echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 5/10 Actualizando... **\e[0m"
 echo
-sudo apt-get dist-upgrade -y
+apt-get dist-upgrade -y
 echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 6/10 Actualizando... **\e[0m"
 echo
-sudo apt-get autoremove -y
+apt-get autoremove -y
 echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 7/10 Actualizando... **\e[0m"
 echo
-sudo apt -y autoclean
+apt -y autoclean
 echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 8/10 Actualizando... **\e[0m"
 echo
-sudo apt update
+apt update
 echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 9/10 Actualizando... **\e[0m"
 echo
-sudo apt -f -y install
+apt -f -y install
 echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 10/10 Linux actualizado. **\e[0m"
 echo
