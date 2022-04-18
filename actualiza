@@ -1,0 +1,3 @@
+
+cd /tmp
+nohup actualizar &
