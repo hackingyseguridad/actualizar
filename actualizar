@@ -35,7 +35,7 @@ apt-get update
 echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 4/10 Actualizando... **\e[0m"
 echo
-apt-get upgrade --fix-missing -y
+apt-get full-upgrade --fix-missing -y
 echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 5/10 Actualizando... **\e[0m"
 echo
