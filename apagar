@@ -1,0 +1,4 @@
+#!/bash/sh
+# Se autocopia en la carpeta /sbin
+# Asigna permisos de ejecución chmod 777 apagar
+shutdown now
