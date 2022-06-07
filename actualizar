@@ -18,6 +18,7 @@ $BlancoAlt
 echo "              http://www.hackingyseguridad.com"
 echo
 timedatectl set-timezone Europe/Madrid
+timedatectl timedatectl set-local-rtc 0
 timedatectl
 $Blanco
 echo 
