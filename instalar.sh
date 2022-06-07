@@ -16,6 +16,8 @@ chmod 777 actualizar
 cp actualizar /sbin/
 chmod 777 actualiza
 cp actualiza /sbin/
+chmod 777 apaga
+cp apaga /sbin/
 echo
 echo "Instalado !!!"
 echo
