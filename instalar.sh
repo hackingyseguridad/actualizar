@@ -8,7 +8,7 @@ echo "Instalando ..."
 echo
 echo "Estableciendo hora"
 timedatectl set-timezone Europe/Madrid
-timedatectl timedatectl set-local-rtc 0
+timedatectl set-local-rtc 1
 timedatectl
 echo
 echo "Copiando ficheros ..."
@@ -18,3 +18,4 @@ chmod 777 actualiza
 cp actualiza /sbin/
 echo
 echo "Instalado !!!"
+echo
