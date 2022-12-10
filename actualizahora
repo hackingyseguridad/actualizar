@@ -1,6 +1,6 @@
 #!/bin/sh
 # Actualiza fecha y hora en distribuciones basadas en DebiaN
-# En modo X pulsar boton derecho del raton para dar permisos del ejecucion o desde consola teclemaos: chmod 777 actualizar. O ejecutar: sh instalar.sh
+# En modo X pulsar boton derecho del raton para dar permisos del ejecucion o desde consola teclemaos: chmod 777 actualizar. O ejecutar: sh actualizahora.sh
 # Uso.: ./actualizahora
 # Antonio Taboada 10 Dic 2022
 Blanco=$(echo 'printf' '\033[0m')
