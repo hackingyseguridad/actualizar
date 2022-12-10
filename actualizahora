@@ -1,0 +1,42 @@
+#!/bin/sh
+# Actualiza fecha y hora en distribuciones basadas en DebiaN
+# En modo X pulsar boton derecho del raton para dar permisos del ejecucion o desde consola teclemaos: chmod 777 actualizar. O ejecutar: sh instalar.sh
+# Uso.: ./actualizahora
+# Antonio Taboada 10 Dic 2022
+Blanco=$(echo 'printf' '\033[0m')
+BlancoAlt=$(echo 'printf' '\033[97m')
+$Blanco
+cat << "INFO"
+             _               _ _          _
+            | |             | (_)        | |
+   __ _  ___| |_ _   _  __ _| |_ ______ _| |__   ___  _ __ __ _
+  / _` |/ __| __| | | |/ _` | | |_  / _` | '_ \ / _ \| '__/ _` |
+ | (_| | (__| |_| |_| | (_| | | |/ / (_| | | | | (_) | | | (_| |
+  \__,_|\___|\__|\__,_|\__,_|_|_/___\__,_|_| |_|\___/|_|  \__,_|  ver 1.0 (2022)
+INFO
+$BlancoAlt
+echo "              http://www.hackingyseguridad.com"
+echo
+$Blanco
+echo
+echo "\e[1;31m[+]\e[0;30m \e[42m** 1/5 Estableciendo Zona Europe/Madrid . **\e[0m"
+echo
+timedatectl set-timezone Europe/Madrid
+echo
+echo "\e[1;31m[+]\e[0;30m \e[42m** 2/5 Instalando ntpdate . **\e[0m"
+echo
+sudo apt-get install ntpdate
+echo
+echo "\e[1;31m[+]\e[0;30m \e[42m** 3/5 Sincronizando hora con NTP server. **\e[0m"
+echo
+sudo ntpdate hora.ngn.rima-tde.net
+echo
+echo "\e[1;31m[+]\e[0;30m \e[42m** 4/5 Consultando la hora.. **\e[0m"
+echo
+timedatectl status
+echo
+echo "\e[1;31m[+]\e[0;30m \e[42m** 5/5 Actualizada la hora .. **\e[0m"
+echo
+date
+echo
+

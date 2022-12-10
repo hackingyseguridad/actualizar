@@ -1,9 +1,0 @@
-echo "actualizando hora ..."
-timedatectl set-timezone Europe/Madrid
-echo "."
-sudo apt-get install ntpdate
-echo ".."
-sudo ntpdate hora.ngn.rima-tde.net
-echo "..."
-timedatectl status
-echo "hecho !"
