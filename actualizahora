@@ -33,6 +33,7 @@ sudo ntpdate hora.ngn.rima-tde.net
 echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 4/5 Consultando la hora.. **\e[0m"
 echo
+set - timezone,
 timedatectl status
 echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 5/5 Actualizada la hora .. **\e[0m"
