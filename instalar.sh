@@ -16,6 +16,8 @@ chmod 777 actualizar
 cp actualizar /sbin/
 chmod 777 actualiza
 cp actualiza /sbin/
+chmod 777 actualizahora
+cp actualizahora /sbin/
 chmod 777 apagar
 cp apagar /sbin/
 echo
