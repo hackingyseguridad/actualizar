@@ -13,10 +13,11 @@ cat << "INFO"
   / _` |/ __| __| | | |/ _` | | |_  / _` | '_ \ / _ \| '__/ _` |
  | (_| | (__| |_| |_| | (_| | | |/ / (_| | | | | (_) | | | (_| |
   \__,_|\___|\__|\__,_|\__,_|_|_/___\__,_|_| |_|\___/|_|  \__,_|  ver 1.0 (2022)
+  #timedatectl set-time '2023-07-25 23:20:50'
 INFO
 $BlancoAlt
 echo "              http://www.hackingyseguridad.com"
-echo
+echo 
 $Blanco
 echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 1/5 Estableciendo Zona Europe/Madrid . **\e[0m"
