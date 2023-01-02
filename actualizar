@@ -19,12 +19,20 @@ echo "              http://www.hackingyseguridad.com"
 echo
 $Blanco
 echo 
-echo "\e[1;31m[+]\e[0;30m \e[42m** 1/10 Actualizando Linux. **\e[0m"
+echo "\e[1;31m[+]\e[0;30m \e[42m** 1/10 Actualizando la hora del sistema. **\e[0m"
+echo
+timedatectl set-timezone Europe/Madrid
+timedatectl set-local-rtc 1
+timedatectl
+sudo apt-get install ntpdate
+sudo ntpdate hora.ngn.rima-tde.net
+set - timezone
+timedatectl status
+date
+echo
+echo "\e[1;31m[+]\e[0;30m \e[42m** 2/10 Actualizando Linux... **\e[0m"
 echo
 dpkg --configure -a
-echo
-echo "\e[1;31m[+]\e[0;30m \e[42m** 2/10 Actualizando... **\e[0m"
-echo
 apt-get clean
 echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 3/10 Actualizando... **\e[0m"
