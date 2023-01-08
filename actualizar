@@ -21,6 +21,7 @@ $Blanco
 echo 
 echo "\e[1;31m[+]\e[0;30m \e[42m** 1/10 Actualizando la hora del sistema. **\e[0m"
 echo
+date
 timedatectl set-timezone Europe/Madrid
 timedatectl set-local-rtc 1
 timedatectl
