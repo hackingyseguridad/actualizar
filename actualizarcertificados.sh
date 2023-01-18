@@ -1,3 +1,4 @@
+#!/bin/sh
 echo 
 echo descargar certificados actuales a intalarlos
 echo "ultima version de certificados para Debian "
