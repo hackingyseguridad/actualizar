@@ -1,6 +1,6 @@
 #!/bin/sh
 echo 
-echo descargar certificados actuales a intalarlos
+echo "Descargar certificados del SO Linux Debian actuales e intalarlos"
 echo "ultima version de certificados para Debian "
 echo "http://ftp.debian.org/debian/pool/main/c/ca-certificates/?C=M;O=D"
 echo 
