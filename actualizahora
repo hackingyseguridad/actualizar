@@ -13,7 +13,7 @@ cat << "INFO"
   / _` |/ __| __| | | |/ _` | | |_  / _` | '_ \ / _ \| '__/ _` |
  | (_| | (__| |_| |_| | (_| | | |/ / (_| | | | | (_) | | | (_| |
   \__,_|\___|\__|\__,_|\__,_|_|_/___\__,_|_| |_|\___/|_|  \__,_|  ver 1.0 (2022)
-  #timedatectl set-time '2023-07-25 23:20:50'
+#timedatectl set-time '2023-07-25 23:20:50'
 INFO
 $BlancoAlt
 echo "              http://www.hackingyseguridad.com"
@@ -23,16 +23,17 @@ echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 1/5 Estableciendo Zona Europe/Madrid . **\e[0m"
 echo
 timedatectl set-timezone Europe/Madrid
+timedatectl set-local-rtc 0
 timedatectl set-local-rtc 1
-timedatectl
+timedatectl status
 echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 2/5 Instalando ntpdate . **\e[0m"
 echo
-sudo apt-get install ntpdate
+apt-get install ntpdate
 echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 3/5 Sincronizando hora con NTP server. **\e[0m"
 echo
-sudo ntpdate hora.ngn.rima-tde.net
+ntpdate hora.ngn.rima-tde.net
 ntpdate 80.58.60.26
 ntpdate 80.58.60.23
 echo
@@ -45,4 +46,3 @@ echo "\e[1;31m[+]\e[0;30m \e[42m** 5/5 Actualizada la hora .. **\e[0m"
 echo
 date
 echo
-
