@@ -32,6 +32,7 @@ apt-get install ntpdate
 ntpdate hora.ngn.rima-tde.net
 set - timezone
 timedatectl status
+echo "hora actualizada para el sistema.: "
 date
 echo
 echo "\e[1;31m[+]\e[0;30m \e[42m** 2/10 Actualizando Linux... **\e[0m"
