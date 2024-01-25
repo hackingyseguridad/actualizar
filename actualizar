@@ -58,11 +58,11 @@ echo "\e[1;31m[+]\e[0;30m \e[42m** 6/10 Actualizando... **\e[0m"
 echo
 apt-get autoremove -y
 echo
-echo "\e[1;31m[+]\e[0;30m \e[42m** 7/10 Actualizando... **\e[0m"
+echo "\e[1;31m[+]\e[0;30m \e[42m** 7/10 Borrando... **\e[0m"
 echo
 apt -y autoclean
 echo
-echo "\e[1;31m[+]\e[0;30m \e[42m** 8/10 Actualizando... **\e[0m"
+echo "\e[1;31m[+]\e[0;30m \e[42m** 8/10 Borrando... **\e[0m"
 echo
 apt update
 echo
