@@ -1,7 +1,7 @@
 #
 # (R) hackingyseguridad.com 2024
 #
-# Sources List para  Kali Linux 2023
+# Sources List para  Kali Linux a partir de Mayo 2023
 # editar el fichero /etc/apt/sources.list   e incluir esta linea:
 
 deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
