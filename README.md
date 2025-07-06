@@ -8,10 +8,13 @@ Actualizador desde repositorio de paquetes en distribuciones basadas en Debian L
 
 ## instalacion
 
+git clone https://github.com/hackingyseguridad/actualizar
 
+cd actualizar
 
+sh instalar.sh
 
-
+actualizar
 
 
 ### Ejecutar sin descargar git
