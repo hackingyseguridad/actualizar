@@ -15,3 +15,10 @@ gpg --no-default-keyring --keyring /usr/share/keyrings/kali-archive-keyring.gpg 
 
 wget https://security.debian.org/debian-security/pool/main/c/ca-certificates/ca-certificates_20200601~deb9u2_all.deb
 sudo dpkg -i ca-certificates_20200601~deb9u2_all.deb
+
+# Instala certt CA
+
+apt-get install ca-certificates
+
+update-ca-certificates
+
