@@ -159,10 +159,6 @@ Antes de ejecutar cualquier script con privilegios de root —especialmente el m
 
 ---
 
-## Licencia
-
-Distribuido bajo licencia **[GPL-3.0](LICENSE)**.
-
-## Autor y enlaces
-
-Desarrollado por **Antonio Taboada** — [hackingyseguridad.com](http://www.hackingyseguridad.com/)
+#
+[hackingyseguridad.com](http://www.hackingyseguridad.com/)
+#
