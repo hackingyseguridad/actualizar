@@ -1,4 +1,4 @@
-# actualizar
+### actualizar
 
 **Conjunto de scripts para actualizar, mantener y administrar de forma rápida distribuciones Linux basadas en Debian** (Debian, Ubuntu, Kali Linux, Parrot OS, etc.).
 
@@ -12,7 +12,7 @@ Automatiza tareas repetitivas de mantenimiento: sincronización horaria, actuali
 
 ---
 
-## Tabla de contenidos
+### Tabla de contenidos
 
 - [Características](#características)
 - [Tabla resumen de scripts](#tabla-resumen-de-scripts)
@@ -29,18 +29,18 @@ Automatiza tareas repetitivas de mantenimiento: sincronización horaria, actuali
 
 ---
 
-## Características
+### Características
 
 | Característica | Descripción |
 |---|---|
-| 🔄 Actualización completa | Ejecuta `update`, `full-upgrade --fix-missing` y `dist-upgrade` en un único paso |
-| 🛠️ Corrección de dependencias | Repara paquetes rotos con `dpkg --configure -a` y `apt -f install` |
-| 🧹 Limpieza profunda | Elimina paquetes huérfanos y cachés con `autoremove` y `autoclean` |
-| 🕒 Sincronización horaria | Ajusta zona horaria (`Europe/Madrid`) y sincroniza la hora vía NTP |
-| 🌐 DNS personalizado | Configura resolvers DNS manuales y bloquea su sobrescritura |
-| 🔐 Certificados y claves | Actualiza certificados CA y claves PGP/GPG de los repositorios |
-| ⚡ Comandos del sistema | Se instala en `/sbin/` para invocarse como cualquier otro comando Linux |
-| 💻 Compatibilidad | Debian, Ubuntu, Kali Linux, Parrot OS y derivados basados en `apt` |
+| Actualización completa | Ejecuta `update`, `full-upgrade --fix-missing` y `dist-upgrade` en un único paso |
+| Corrección de dependencias | Repara paquetes rotos con `dpkg --configure -a` y `apt -f install` |
+| Limpieza profunda | Elimina paquetes huérfanos y cachés con `autoremove` y `autoclean` |
+| Sincronización horaria | Ajusta zona horaria (`Europe/Madrid`) y sincroniza la hora vía NTP |
+| DNS personalizado | Configura resolvers DNS manuales y bloquea su sobrescritura |
+| Certificados y claves | Actualiza certificados CA y claves PGP/GPG de los repositorios |
+| Comandos del sistema | Se instala en `/sbin/` para invocarse como cualquier otro comando Linux |
+| Compatibilidad | Debian, Ubuntu, Kali Linux, Parrot OS y derivados basados en `apt` |
 
 ---
 
@@ -135,27 +135,6 @@ sudo sh actualizarcertificados.sh    # Actualiza certificados CA y claves de rep
 **`instalar.sh`** — Instalador local: fija la hora y copia los binarios principales a `/sbin/`.
 
 **`sources.list`** — Ejemplo de fichero de repositorios `apt`, a usar como referencia o punto de partida, revisando que coincida con la versión y distribución de tu sistema.
-
----
-
-## Preguntas frecuentes
-
-| Pregunta | Respuesta |
-|---|---|
-| ¿Funciona en Ubuntu? | Sí, cualquier distribución basada en `apt`/`dpkg` (Ubuntu, Debian, Kali, Parrot OS, Mint, etc.) |
-| ¿Necesito ser root? | Sí, todos los scripts realizan operaciones de sistema (`apt`, `timedatectl`, `shutdown`, etc.) |
-| ¿Puedo cambiar la zona horaria? | Sí, edita `Europe/Madrid` por la tuya (formato `Región/Ciudad`) en `actualizar`, `actualizahora` e `instalar.sh` |
-| ¿Qué hace `resolv.sh` con mi configuración DNS actual? | La sobrescribe por completo y la bloquea; haz una copia de tu `/etc/resolv.conf` antes de ejecutarlo si quieres poder revertir |
-
----
-
-## Aviso de seguridad
-
-Antes de ejecutar cualquier script con privilegios de root —especialmente el método `wget | bash`—, revisa su contenido. Ten en cuenta que:
-
-- `resolv.sh` modifica y **bloquea** `/etc/resolv.conf` (`chattr +i`); revierte con `sudo chattr -i /etc/resolv.conf` si necesitas volver a la configuración gestionada automáticamente.
-- `apagar` y `apaga` apagan el equipo sin confirmación previa.
-- Los scripts asumen zona horaria `Europe/Madrid` y servidores NTP/DNS concretos; ajústalos a tu entorno antes de desplegarlos en producción.
 
 ---
 
