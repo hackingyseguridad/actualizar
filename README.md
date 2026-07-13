@@ -22,10 +22,6 @@ Automatiza tareas repetitivas de mantenimiento: sincronización horaria, actuali
   - [Opción 2 · Ejecución directa sin git](#opción-2--ejecución-directa-sin-git)
 - [Uso](#uso)
 - [Detalle de cada script](#detalle-de-cada-script)
-- [Preguntas frecuentes](#preguntas-frecuentes)
-- [Aviso de seguridad](#aviso-de-seguridad)
-- [Licencia](#licencia)
-- [Autor y enlaces](#autor-y-enlaces)
 
 ---
 
