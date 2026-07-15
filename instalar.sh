@@ -20,6 +20,8 @@ chmod 777 actualizahora
 cp actualizahora /sbin/
 chmod 777 apagar
 cp apagar /sbin/
+chmod 777 reinicia
+cp reinicia /sbin/
 echo
 echo "Instalado !!!"
 echo
